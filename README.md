@@ -1,7 +1,9 @@
 # AI for Market Trend Analysis 📈
 
 ## 📌 Project Overview
-An end-to-end AI system designed to analyze financial time-series data, detect market trends, and forecast future stock prices using both statistical (Prophet) and Deep Learning (LSTM) methodologies.
+An end-to-end AI system designed to analyze financial time-series data, detect market trends,
+and forecast future stock prices using both statistical (Prophet) and Deep Learning (LSTM)
+methodologies.
 
 ## 🎯 Objectives
 * Perform Exploratory Data Analysis (EDA) on historical market data.
@@ -13,20 +15,19 @@ An end-to-end AI system designed to analyze financial time-series data, detect m
 * **Language**: Python 3.8+
 * **Libraries**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
 * **ML/DL**: Facebook Prophet, TensorFlow/Keras (LSTM)
+* **Environment**: Virtual Environment / Conda (Jupyter Notebook based)
 
 ## 📊 Models Implemented
-1.  **Prophet**: Used as a baseline for capturing seasonality and trend components.
-2.  **LSTM (Long Short-Term Memory)**: A Recurrent Neural Network (RNN) optimized for sequence prediction and complex pattern recognition.
+1. **Prophet**  
+   Used as a baseline statistical model to capture long-term trends and seasonality.
+
+2. **LSTM (Long Short-Term Memory)**  
+   A deep learning recurrent neural network capable of learning complex, non-linear
+   temporal dependencies in financial time-series data.
 
 ## 🚀 How to Run
-1.  Install dependencies: `pip install pandas numpy matplotlib seaborn scikit-learn prophet tensorflow`
-2.  Place `Market_Trend_Analysis.csv` in the root directory.
-3.  Run the script: `python main.py`
-4.  View generated plots (`eda_*.png`, `forecast_*.png`) and console metrics.
-
-## 📉 Results Summary
-* **Trend Detection**: Successfully identified market regime shifts using SMA/RSI.
-* **Forecasting**: LSTM outperformed Prophet with a lower RMSE, demonstrating superior handling of volatility.
-
-## ⚠️ Disclaimer
-This project is for **academic purposes only** (IIT Ropar Minor in AI). It does not constitute financial advice.
+1. (Optional but recommended) Create and activate a virtual environment:
+   ```bash
+   python -m venv market_env
+   source market_env/bin/activate   # macOS/Linux
+   market_env\Scripts\activate      # Windows
